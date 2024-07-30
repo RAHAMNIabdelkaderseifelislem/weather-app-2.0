@@ -33,7 +33,7 @@ class Weather {
     );
 }
 
-String appId = "dfa609f3274391103c598f7c74ecb199";
+String appId = "YOUR_API_KEY_HERE";
 
 Future<List> fetchData(String lat,String lon,String city) async{
   var url = "https://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&units=metric&appid=$appId";
